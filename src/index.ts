@@ -49,6 +49,15 @@ bot.action("about", (ctx: Context): void => {
   );
 });
 
+bot.telegram
+  .setWebhook(`${HOSTNAME}/telegraf-webhook`)
+  .then(() => {
+    console.log(`Webhook set`);
+  })
+  .catch((err) => {
+    console.error(`Error setting webhook: ${err}`);
+  });
+
 app.use(express.json());
 
 app.post("/telegraf-webhook", (req: Request, res: Response): void => {
