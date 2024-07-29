@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/index.ts",
+      "use": "@vercel/static-build",
+      "config": {
+        "typescript": {
+          "tsconfig": "tsconfig.json"
+        }
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/src/*",
+      "dest": "src/index.ts"
+    }
+  ]
+}

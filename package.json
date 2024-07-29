@@ -1,0 +1,45 @@
+{
+  "name": "github-webhooks",
+  "version": "1.0.0",
+  "description": "This project was a personal project then refined again and made public",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "ts-node src/index",
+    "dev": "nodemon src/index",
+    "build": "tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbal023/gh-hook.git"
+  },
+  "keywords": [
+    "github",
+    "webhook",
+    "bot",
+    "telegram",
+    "telegraf",
+    "node",
+    "typescript"
+  ],
+  "author": "xbal023",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xbal023/gh-hook/issues"
+  },
+  "homepage": "https://github.com/xbal023/gh-hook#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "telegraf": "^4.16.3"
+  }
+}
